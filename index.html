@@ -11,18 +11,38 @@
     <title>Fadlu Graphix</title>
   </head>
   <style>
+    * {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    @media (max-width: 599px) {
+      #main-header {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+
+      .welcome {
+        width: 100%;
+      }
+      ul {
+        display: block;
+      }
+      li a {
+        display: block;
+      }
+    }
     #main-header {
       background-color: white;
       margin-bottom: 5px;
       padding: 4px;
+      position: relative;
       box-shadow: 5px 5px 5px gray;
     }
-
+    .Header {
+      border-bottom: 2px inset lightgray;
+    }
     div > ul {
-      position: absolute;
       list-style-type: none;
-      top: 7px;
-      left: 800px;
+      
       display: inline-flex;
     }
     li a {
@@ -32,11 +52,11 @@
       text-decoration: none;
     }
     input[type="search"] {
-      width: 200px;
+      width: 300px;
       display: block;
       font-size: 18px;
       color: rgb(73, 219, 171);
-      padding: 7px;
+      padding: 10px;
     }
     li a:hover {
       color: white;
@@ -44,20 +64,50 @@
       padding: 10px;
       text-align: center;
     }
+    li a:active {
+      background-color: rgb(152, 231, 241);
+      padding: 10px;
+      text-align: center;
+    }
     input[type="search"]:hover {
       border: 2px solid rgb(20, 67, 88);
     }
+    input[type="submit"] {
+      background-color: orange;
+      padding: 8px;
+      font-size: 12px;
+      border: none;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: rgb(93, 155, 43);
+    }
     .welcome {
-      background-color: rgb(30, 78, 139);
+      background-color: rgb(38, 120, 141);
       color: white;
+      text-decoration: none;
       text-align: center;
       padding: 10px;
       margin-top: 5px;
     }
+    .vission, .mission, .goals {
+       color:yellow;
+    }
+    .objective {
+      display: grid;
+      color: white;
+      margin-top: 5px;
+      grid-template-columns: 100px 100px 100px;
+      column-gap: 6px;
+    }
     p {
-      font-size: 24px;
-      color: yellow;
+      font-size: 18px;
       margin: auto 5px;
+    }
+    .services {
+      background-color: lightblue;
+      padding: 15px;
+      width: 300px;
     }
   </style>
   <body>
@@ -76,9 +126,30 @@
     </div>
     <label for="search">Search:</label>
     <input type="text" name="search" class="search" placeholder="search" />
+    <input type="submit" name="submit" />
     <div class="welcome">
       <h2>Let's Elevate your brand</h2>
-      <p><span>FadluGraphix</span> is here for you</p>
+      <p>
+        Are you loking for a quality designs that will boost your brand <br />
+        FadluGraphix is here for you
+      </p>
+        <span class="vission">Vission</span>
+        <p>Quality design should be available without breaking the bank</p>
+        </p>
+      
+      <span class="mission">mission</span>
+        <p>To make quality design available for everyone at a cheaper rate</p>
+
+        <span class="goals">Goals</span>
+        <p>Raising professional teams who are experts in graphic design</p>
+  
+    </div>
+
+    <h2>Our services</h2>
+    <div class="services">
+      We deliver quality designs<br />
+      We provide super designs for your brand<br />
+      Elevating your brand with our expert teams
     </div>
   </body>
 </html>
