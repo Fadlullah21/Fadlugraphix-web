@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glass Effect</title>
+  </head>
+  
+  <body>
+    <div class="card">
+      <h1>LOGIN</h1>
+      <form action="">
+      <label for="email">E-mail</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        required="required"
+        placeholder="john123@email.com"
+      />
+      <label for="password">Password</label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        required="required"
+        placeholder="Enter password"
+      />
+      <input type="checkbox" name="Remeber Me?" id="remember" />
+      <label for="checkbox">Remember Me</label>
+      <a href="#" id="forgot">Forgot Password?</a>
+      <input type="submit" value="Submit" id="submit" />
+      <p>Don't have an account?<button class="register">
+      <a href="#">Register</a></p></button>
+      </form>
+    </div>
+    <script>
+      document.querySelector('form').onsubmit = function(){ 
+      const email = document.getElementById('email').value;
+      alert(`Hello ${email}!`);
+
+}
+    </script>
+  </body>
+</html>
