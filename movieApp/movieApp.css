@@ -1,0 +1,57 @@
+h1 {
+      color: rgb(255, 0, 149);
+    }
+    [class*="sets"] {
+      margin-left: 10px;
+      display: inline-flex;
+      flex-wrap: nowrap;
+    }
+    .moviesets1 {
+        margin-top: 0;
+    }
+    [class^="movie"] {
+      width: 200px;
+      height: auto;
+    }
+    [class^="movie"]:hover {
+      cursor: pointer;
+      color: gray;
+    }
+    figure {
+      border: 1px solid black;
+      margin: 0;
+      margin-right: 10px;
+      margin-top: 5px;
+      animation: Move 4s infinite;
+    }
+    h3 {
+      margin-left: 5px;
+      text-transform: capitalize;
+    }
+    #search {
+      width: 300px;
+      height: 29px;
+      border-radius: 5px;
+      align-items: center;
+      padding-left: 5px;
+    }
+    #icon {
+        width: 20px;
+        display: inline;
+        position: relative;
+        background-color: black;
+        padding: 3px;
+       bottom: 27px;
+       cursor: pointer;
+        left: 300px;
+    }
+    button {
+        border: none;
+        cursor: pointer;
+        background-color: rgb(98, 153, 255);
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+        text-align: center;
+
+    }
